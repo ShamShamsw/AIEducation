@@ -75,8 +75,8 @@ def save_teams_to_excel(teams, output_file='teams.xlsx'):
     df_teams = pd.DataFrame(team_data)
     df_teams.to_excel(output_file, index=False)
 
-# Example Usage:
-# students = load_students_from_excel('students.xlsx')
-# teams = group_students_into_teams(students)
-# teams = introduce_random_variation(teams, variation_factor=0.2)
-# save_teams_to_excel(teams)
+
+students = load_students_from_excel('students.xlsx')
+teams = group_students_into_teams(students)
+teams = introduce_random_variation(teams, variation_factor=0.2)
+save_teams_to_excel(teams)
